@@ -125,10 +125,10 @@ function setuphifidirs {
 }
 
 function handlecmake {
-  if [[ ! -f "cmake-3.0.2.tar.gz" ]]; then
-    wget http://www.cmake.org/files/v3.0/cmake-3.0.2.tar.gz
-    tar -xzvf cmake-3.0.2.tar.gz
-    cd cmake-3.0.2/
+  if [[ ! -f "cmake-3.7.2.tar.gz" ]]; then
+    wget https://cmake.org/files/v3.7/cmake-3.7.2.tar.gz
+    tar -xzvf cmake-3.7.2.tar.gz
+    cd cmake-3.7.2/
     ./configure --prefix=/usr
     gmake && gmake install
     cd ..
